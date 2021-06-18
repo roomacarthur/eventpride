@@ -1,9 +1,9 @@
 $('button').on('click', function() {
     if ($(this).is('#history')) {
-        $('#history-content').show().siblings('div').hide();
+        $('#history-content').slideToggle().siblings('div').slideUp();
     } else if ($(this).is('#importance')) {
-        $('#importance-content').show().siblings('div').hide();
+        $('#importance-content').slideToggle().siblings('div').slideUp();
     } else if ($(this).is('#information')) {
-        $('#information-content').show().siblings('div').hide();
+        $('#information-content').slideToggle().siblings('div').slideUp();
     }
 });
