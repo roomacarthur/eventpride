@@ -22,12 +22,12 @@ def get_events():
 # Single events page.
 
 
-# @app.route("/event-temp")
-# def single_event():
-#     """
-#     Single events page, directed here after clicking card on events.html.
-#     """
-#     return render_template('event-temp.html', title="Event-name")
+@app.route("/event-temp")
+def single_event():
+    """
+    Single events page, directed here after clicking card on events.html.
+    """
+    return render_template('event-temp.html', title="Event-name")
 
 # wikipride
 
