@@ -1,0 +1,21 @@
+body {
+    margin: 0;
+}
+
+#nav {
+    height: 60px;
+    width: 100%;
+    background-color: cornflowerblue;
+}
+
+#heroimg {
+    height: 25em;
+    width: 100%;
+    background-color: darkorchid;
+}
+
+#footer {
+    height: 60px;
+    width: 100%;
+    background-color: hotpink;
+}
