@@ -19,3 +19,9 @@ body {
     width: 100%;
     background-color: hotpink;
 }
+
+#history-content,
+#importance-content,
+#information-content {
+    display: none;
+}
