@@ -1,3 +1,12 @@
+/* ____GENERAL_____ */
+
+body {
+    margin: 0;
+}
+
+
+/* ____????_____ */
+
 nav .brand-logo {
     margin-left: 1.5rem;
 }
@@ -6,18 +15,20 @@ nav .brand-logo {
     text-align: center;
     border-radius: 20px;
     overflow: hidden;
-    box-shadow: 2px 1px 18px -2px rgba(133,111,111,0.71);
--webkit-box-shadow: 2px 1px 18px -2px rgba(133,111,111,0.71);
--moz-box-shadow: 2px 1px 18px -2px rgba(133,111,111,0.71);
+    box-shadow: 2px 1px 18px -2px rgba(133, 111, 111, 0.71);
+    -webkit-box-shadow: 2px 1px 18px -2px rgba(133, 111, 111, 0.71);
+    -moz-box-shadow: 2px 1px 18px -2px rgba(133, 111, 111, 0.71);
 }
+
 .card:hover {
     animation-name: div-zoom;
     animation-duration: 0.5s;
     animation-fill-mode: forwards;
-    box-shadow: 2px 1px 50px 19px rgba(133,111,111,0.8);
--webkit-box-shadow: 2px 1px 50px 19px rgba(133,111,111,0.8);
--moz-box-shadow: 2px 1px 50px 19px rgba(133,111,111,0.8);
+    box-shadow: 2px 1px 50px 19px rgba(133, 111, 111, 0.8);
+    -webkit-box-shadow: 2px 1px 50px 19px rgba(133, 111, 111, 0.8);
+    -moz-box-shadow: 2px 1px 50px 19px rgba(133, 111, 111, 0.8);
 }
+
 @keyframes div-zoom {
     from {
         transform: scale(1);
@@ -26,7 +37,41 @@ nav .brand-logo {
         transform: scale(1.05);
     }
 }
+
 .card-img {
     width: 100%;
     object-fit: contain;
+}
+
+
+/* ____WIKIPRIDE.HTML_____ */
+
+
+/* Hide content */
+
+#history-content,
+#importance-content,
+#information-content {
+    display: none;
+}
+
+
+/* 3 next rules to be removed once nav, parallax hero imgs & footer fixed */
+
+#nav {
+    height: 60px;
+    width: 100%;
+    background-color: cornflowerblue;
+}
+
+#heroimg {
+    height: 25em;
+    width: 100%;
+    background-color: darkorchid;
+}
+
+#footer {
+    height: 60px;
+    width: 100%;
+    background-color: hotpink;
 }
