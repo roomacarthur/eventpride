@@ -19,8 +19,19 @@ def get_events():
     """Render events template"""
     return render_template('events.html', title='Events')
 
+# Single events page.
+
+
+@app.route("/event-temp")
+def single_event():
+    """
+    Single events page, directed here after clicking card on events.html.
+    """
+    return render_template('event-temp.html', title="Event-name")
 
 # wikipride
+
+
 @app.route("/wikipride")
 def wikipride():
     """Render wikipride template"""
@@ -44,6 +55,7 @@ def login():
 def signup():
     """Handles registration functionality"""
     return render_template('signup.html', title='SignUp')
+
 
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP", "0.0.0.0"),
