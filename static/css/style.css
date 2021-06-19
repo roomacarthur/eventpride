@@ -33,6 +33,7 @@ nav .brand-logo {
     from {
         transform: scale(1);
     }
+
     to {
         transform: scale(1.05);
     }
@@ -76,13 +77,87 @@ nav .brand-logo {
     background-color: hotpink;
     bottom: 0;
 }
+
 .social {
     display: flex;
     justify-content: center;
     padding-top: 10px;
-  }
-  
-  .social a {
+}
+
+.social a {
     font-size: 1.5em;
     padding: 0 50px;
-  }
+}
+
+/* The flag cards */
+
+.flag-button {
+    border: none;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+#flag-container {
+    height: 120vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 15vw 15vw 15vw;
+    grid-template-rows: 25vh 25vh 25vh 25vh;
+    gap: 3%;
+    justify-items: center;
+}
+
+.flags {
+    width: 100%;
+    height: 100%;
+    justify-items: center;
+}
+
+.flags img {
+    width: 70%;
+    height: 60%;
+    margin: 5% auto;
+    padding-top: 5%;
+    display: block;
+}
+
+.flags h5 {
+    text-align: center;
+}
+
+/* The modals for the flags */
+
+/* The Modal background */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 10vh;
+    width: 20vw;
+    height: 40vh;
+    overflow: hidden;
+}
+
+/* Modal Content Box */
+.modal-content {
+    height: 100%;
+    width: 100%;
+    margin: 5% auto;
+}
+
+/* The Close Button */
+.close {
+    color: rgb(133, 8, 206);
+    float: right;
+    font-size: 35px;
+    font-weight: bolder;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
