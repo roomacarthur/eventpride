@@ -75,6 +75,7 @@ nav .brand-logo {
     width: 100%;
     background-color: hotpink;
     bottom: 0;
+    position: fixed;
 }
 .social {
     display: flex;
@@ -85,4 +86,8 @@ nav .brand-logo {
   .social a {
     font-size: 1.5em;
     padding: 0 50px;
+  }
+  footer .copyright {
+  
+    margin-bottom: 0;
   }
