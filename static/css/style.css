@@ -75,7 +75,6 @@ nav .brand-logo {
     width: 100%;
     background-color: hotpink;
     bottom: 0;
-    position: fixed;
 }
 .social {
     display: flex;
