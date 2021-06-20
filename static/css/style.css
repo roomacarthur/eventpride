@@ -1,32 +1,59 @@
+/* ____COLOURS_____ */
+:root {
+    --pink: #F72585;
+    --purple: #7209B7;
+    --darkblue: #3A0CA3;
+    --midblue: #4361EE;
+    --lightblue: #4CC9F0;
+}
+
 /* ____GENERAL_____ */
 
 body {
     margin: 0;
+    background-color: var(--lightblue);
+}
+/* ____base.html_____ */
+/* Base template styling, this will carry across to all .html pages*/
+nav {
+    background-color: var(--darkblue);
+    height: 10vh;
+    line-height: 10vh;
+}
+nav .brand-logo {
+    margin-left: 1.5rem;
+    color: var(--lightblue);
 }
 
+#footer {
+    height: 11vh;
+    width: 100%;
+    background-color:var(--purple);
+    bottom: 0;
+    /* position: fixed; */
+}
 
 /* ____events.html_____ */
 
-nav .brand-logo {
-    margin-left: 1.5rem;
-}
+
 
 .card {
     text-align: center;
     border-radius: 20px;
     overflow: hidden;
-    box-shadow: 2px 1px 18px -2px rgba(133, 111, 111, 0.71);
-    -webkit-box-shadow: 2px 1px 18px -2px rgba(133, 111, 111, 0.71);
-    -moz-box-shadow: 2px 1px 18px -2px rgba(133, 111, 111, 0.71);
+    border: 2px solid #353436;
+    box-shadow: 2px 1px 18px -2px rgba(73, 67, 67, 0.71);
+    -webkit-box-shadow: 2px 1px 18px -2px rgba(73, 67, 67, 0.71);
+    -moz-box-shadow: 2px 1px 18px -2px rgba(73, 67, 67, 0.71);
 }
 
 .card:hover {
     animation-name: div-zoom;
     animation-duration: 0.5s;
     animation-fill-mode: forwards;
-    box-shadow: 2px 1px 50px 19px rgba(133, 111, 111, 0.8);
-    -webkit-box-shadow: 2px 1px 50px 19px rgba(133, 111, 111, 0.8);
-    -moz-box-shadow: 2px 1px 50px 19px rgba(133, 111, 111, 0.8);
+    box-shadow: 2px 1px 25px 10px rgba(78, 68, 68, 0.8);
+    -webkit-box-shadow: 2px 1px 25px 10px rgba(78, 68, 68, 0.8);
+    -moz-box-shadow: 2px 1px 25px 10px rgba(78, 68, 68, 0.8);
 }
 
 @keyframes div-zoom {
@@ -58,6 +85,7 @@ nav .brand-logo {
 
 /* 3 next rules to be removed once nav, parallax hero imgs & footer fixed */
 
+
 #nav {
     height: 60px;
     width: 100%;
@@ -70,12 +98,6 @@ nav .brand-logo {
     background-color: darkorchid;
 }
 
-#footer {
-    height: 10vh;
-    width: 100%;
-    background-color: hotpink;
-    bottom: 0;
-}
 .social {
     display: flex;
     justify-content: center;
