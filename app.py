@@ -19,15 +19,15 @@ def get_events():
     """Render events template"""
     return render_template('events.html', title='Events')
 
-# Single events page.
+# Single events pages.
 
 
-@app.route("/event-temp")
-def single_event():
+@app.route("/bournemouth-pride")
+def bournemouth_pride():
     """
     Single events page, directed here after clicking card on events.html.
     """
-    return render_template('event-temp.html', title="Event-name")
+    return render_template('bournemouth-pride.html', title="Bournemouth pride 2021")
 
 # wikipride
 
