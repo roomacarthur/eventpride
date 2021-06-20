@@ -186,7 +186,10 @@ nav .brand-logo {
     cursor: pointer;
 }
 
-footer .copyright {
+footer {
+    position: relative;
+}
 
+footer .copyright {
     margin-bottom: 0;
   }
