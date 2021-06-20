@@ -30,6 +30,7 @@ let modal8 = document.getElementById("flag8Modal");
 let modal9 = document.getElementById("flag9Modal");
 let modal10 = document.getElementById("flag10Modal");
 let modal11 = document.getElementById("flag11Modal");
+let modal12 = document.getElementById("flag12Modal");
 
 // Declare the button for each modal
 let btn1 = document.getElementsByClassName("flag-button")[0];
@@ -43,6 +44,7 @@ let btn8 = document.getElementsByClassName("flag-button")[7];
 let btn8 = document.getElementsByClassName("flag-button")[8];
 let btn10 = document.getElementsByClassName("flag-button")[9];
 let btn11 = document.getElementsByClassName("flag-button")[10];
+let btn12 = document.getElementsByClassName("flag-button")[11];
 
 
 // Declare the spans to close each modal
@@ -57,7 +59,7 @@ let span8 = document.getElementsByClassName("close")[7];
 let span9 = document.getElementsByClassName("close")[8];
 let span10 = document.getElementsByClassName("close")[9];
 let span11 = document.getElementsByClassName("close")[10];
-
+let span12 = document.getElementsByClassName("close")[11];
 
 // Add an event listener to each modal to display it when clicked
 btn1.onclick = function() {
@@ -92,6 +94,9 @@ btn10.onclick = function() {
 }
 btn11.onclick = function() {
     modal11.style.display = "block";
+}
+btn12.onclick = function() {
+    modal12.style.display = "block";
 }
 
 
@@ -128,4 +133,7 @@ span10.onclick = function() {
 }
 span11.onclick = function() {
     modal11.style.display = "none";
+}
+span12.onclick = function() {
+    modal12.style.display = "none";
 }
