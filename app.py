@@ -29,6 +29,14 @@ def bournemouth_pride():
     """
     return render_template('bournemouth-pride.html', title="Bournemouth pride 2021")
 
+
+@app.route("/bristol-pride")
+def bristol_pride():
+    """
+    Single events page, directed here after clicking card on events.html.
+    """
+    return render_template('bristol-pride.html', title="Bristol pride 2021")
+
 # wikipride
 
 
