@@ -45,7 +45,17 @@ nav .brand-logo {
     object-fit: cover;
 }
 
+/* ____event pages_____ */
 
+.event-img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+#mapid {
+    height: 400px;
+    margin-bottom: 1rem;
+}
 /* ____WIKIPRIDE.HTML_____ */
 
 

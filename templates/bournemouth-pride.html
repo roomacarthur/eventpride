@@ -1,35 +1,58 @@
 {% extends "base.html" %} {% block content %}
-<h2 class="center">Bournemouth Pride</h2>
-<!--
-        title
-        img
-        date
-        location
-        description
-        reviews
-        comments
-        ratings?
-      -->
-
-9 - 10 July 2021 Time TBC Meyrick Park Theme: Stronger Together The Bournemouth
-Pride Hey Bournemouth! Are you ready to Rock Meyrick Park? The Bournemouth
-Pride(Bourne Free Pride) has announced the dates for their 2021 Pride and we
-cannot wait to see what they have planned! The event will take place on the 9th
-to the 10th of July 2021 at Meyrick Park. As of this moment, the identified
-Theme as told by Benjamin Horgan, The Chair of Bourne Free is “Stronger
-Together”. This year’s Pride will celebrate Emergency services and Key Workers.
-These are the people who literally put their lives on the line for us during
-this ongoing pandemic. A fitting theme which we cannot be happier about at Pride
-Events UK. Of course, there are some interesting and exciting developments to
-mention. As The Pride Grows, so does the venue and in 2021 The Bournemouth
-Pride(Bourne Free Pride) has found itself moving to Meyrick Park! In case you
-are wondering, the answer is YES, this will be the BIGGEST Pride Festival Venue
-that The Bournemouth Pride has ever had. Some Rules: Pride Events UK is proud to
-announce that The Bourne Free Pride will be OPEN to those of ALL ages, however,
-children under the age of 16 will have to be accompanied by an adult. Friday
-(Family Night) will be free for everyone of ALL ages. PLUS, those who are under
-the age of 18 will be happy to know that they will be able to attend the event
-completely FREE all weekend. Please be advised, that you will still need to
-order your wristband in-spite of the event being FREE. Everyone over 18 will
-require a wristband for the Saturday of Bourne Free in Meyrick Park. {%
-endblock%}
+<div class="container">
+  <h2 class="center">The Bournemouth Pride</h2>
+  <img
+    class="event-img"
+    src="../static/images/events/bournemouth-beach.jpeg"
+    alt="Bournemouth pier at low tide and evening light."
+  />
+  <h3>Location: Mayrick Park, Bournemouth</h3>
+  <h5>9th - 10th July</h5>
+  <h5>Time: TBA</h5>
+  <p>
+    <strong>Hey Bournemouth! Are you ready to Rock Meyrick Park?</strong>
+  </p>
+  <p>
+    The Bournemouth Pride(Bourne Free Pride) has announced the dates for their
+    2021 Pride and we cannot wait to see what they have planned! The event will
+    take place on the 9th to the 10th of July 2021 at Meyrick Park. As of this
+    moment, the identified Theme as told by Benjamin Horgan, The Chair of Bourne
+    Free is “Stronger Together”.
+  </p>
+  <p>
+    This year’s Pride will celebrate Emergency services and Key Workers. These
+    are the people who literally put their lives on the line for us during this
+    ongoing pandemic. A fitting theme which we cannot be happier about at Pride
+    Events UK.
+  </p>
+  <p>
+    Of course, there are some interesting and exciting developments to mention.
+    As The Pride Grows, so does the venue and in 2021 The Bournemouth
+    Pride(Bourne Free Pride) has found itself moving to Meyrick Park! In case
+    you are wondering, the answer is YES, this will be the BIGGEST Pride
+    Festival Venue that The Bournemouth Pride has ever had.
+  </p>
+  <!--Map-->
+  <div id="mapid"></div>
+</div>
+<script>
+  var myMap = L.map("mapid").setView(
+    [50.727109429351486, -1.8828686826954246],
+    13
+  );
+  var marker = L.marker([50.727109429351486, -1.8828686826954246]).addTo(myMap);
+  L.tileLayer(
+    "https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}",
+    {
+      attribution:
+        'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+      maxZoom: 18,
+      id: "mapbox/streets-v11",
+      tileSize: 512,
+      zoomOffset: -1,
+      accessToken:
+        "pk.eyJ1Ijoicm9vbWFjYXJ0aHVyIiwiYSI6ImNrcTVuZWY1MTE0d2Yydm8wb3JoeXJmYWsifQ.o1gu8ucOwq9lfys2xG7eTA",
+    }
+  ).addTo(myMap);
+</script>
+{%endblock%}
