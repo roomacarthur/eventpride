@@ -76,6 +76,11 @@ nav .brand-logo {
     height: 50vh;
 
 }
+
+.container .next-event{
+    margin: 0 auto;
+    width: 40%;
+}
 /* ____WIKIPRIDE.HTML_____ */
 
 
@@ -141,6 +146,7 @@ nav .brand-logo {
 }
 
 .flag-button:hover {
+    cursor: pointer;
     animation-name: div-zoom;
     animation-duration: 0.5s;
     animation-fill-mode: forwards;
