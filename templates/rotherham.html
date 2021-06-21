@@ -1,0 +1,70 @@
+{% extends "base.html" %} {% block content %}
+<div class="container">
+  <div class="buttons">
+    <a
+      class="waves-effect waves-light btn-small left"
+      href="{{ url_for('bristol_pride') }}"
+      >Previous</a
+    >
+    <a
+      class="waves-effect waves-light btn-small right"
+      href="{{ url_for('llanelli_pride') }}"
+      >Next</a
+    >
+  </div>
+  <br />
+  <h2 class="center">Rotherham Pride 2021</h2>
+  <img
+    class="event-img"
+    src="../static/images/night-pride.jpg"
+    alt="Members at a pride event during the night"
+  />
+  <h3>Location: All Saints Square</h3>
+  <h5>10th July</h5>
+  <h5>Time: TBA</h5>
+  <p>Rotherham Pride will be held on Saturday 10th July 2021.</p>
+  <p>
+    The event is filled with fun activities and entertainment. With the 2020
+    cancellation, there is hope for a better 2021 Rotherham pride event for the
+    whole community. <br />The event’s entrance remains free for all and it aims
+    at promoting the LGBTQIA+ community and creating awareness of emerging
+    issues.
+  </p>
+  <p>
+    A parade is scheduled to begin from All Saints square, which will be
+    concluded at the same place after moving around the town. There will be
+    African Rotherham drummers to end the parade event with special renditions.
+    The main festival site will be situated around the Clifton Park Bandstand
+    with timings TBC.
+  </p>
+  <p>
+    <a
+      href="https://www.pride-events.co.uk/event/rotherham-pride/"
+      target="_blank"
+      >More Information on This Event</a
+    >
+  </p>
+  <!--Map-->
+  <div id="mapid"></div>
+</div>
+<script>
+  var myMap = L.map("mapid").setView(
+    [53.43144470578625, -1.3561610440698448],
+    13
+  );
+  var marker = L.marker([53.43144470578625, -1.3561610440698448]).addTo(myMap);
+  L.tileLayer(
+    "https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}",
+    {
+      attribution:
+        'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+      maxZoom: 18,
+      id: "mapbox/streets-v11",
+      tileSize: 512,
+      zoomOffset: -1,
+      accessToken:
+        "pk.eyJ1Ijoicm9vbWFjYXJ0aHVyIiwiYSI6ImNrcTVuZWY1MTE0d2Yydm8wb3JoeXJmYWsifQ.o1gu8ucOwq9lfys2xG7eTA",
+    }
+  ).addTo(myMap);
+</script>
+{%endblock%}
