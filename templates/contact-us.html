@@ -1,13 +1,23 @@
 {% extends "base.html" %}
 
 {% block content %}
-   
+<section>
+  <div class="contact-text">
+      <p><strong>Email:</strong><a href="mailto:info@eventpride.com" target="_blank">
+              info@eventpride.com</a></p>
+      <p><strong>Phone:</strong> 1800 555 23 23</p>      
+      <p>The best way to contact us is by email or simply use the enquiry form below.</p>
+      <p>We are located at Pheonix Park Dublin 8, Ireland, Dublin</p>
+      <p><a href="https://www.google.com/maps/place/53%C2%B021'21.2%22N+6%C2%B019'47.3%22W/@53.355882,-6.3320017,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d53.355882!4d-6.329813" target="_blank">
+        Click here</a> for directions on google maps</p>
+  </div>
+</section>
        
     <div class="row">
         <div class="col s12 l4 offset-l4">
           <div class="card">
             <div class="card-action pink lighten-2 white-text">
-                <h4>Sign Up</h4>
+                <h4>Contact Us</h4>
             </div>
          <div class="card-content">
             <div class="input-field">
@@ -17,12 +27,7 @@
             <div class="input-field">
               <input id="last_name" type="text" class="validate">
               <label for="last_name">Last Name</label>
-            </div>
-
-            <div class="input-field">
-              <input id="password" type="password" class="validate">
-              <label for="password">Password</label>
-            </div>       
+            </div>      
          
             <div class="input-field">
               <input id="email" type="email" class="validate">
@@ -30,7 +35,12 @@
             </div>
 
             <div class="input-field">
-                <button onclick="M.toast({html: 'Sign up successful!'})" class="btn-large pink lighten-2 waves-effect waves-dark" style="width: 100%;">Sign Up</button>                       
+              <textarea placeholder="Write your message:" id="msg_send" name="msg_send" class="materialize-textarea"></textarea>
+              <label for="password">Message</label>
+            </div> 
+
+            <div class="input-field">
+                <button class="btn-large pink lighten-2 waves-effect waves-dark" style="width: 100%;">Submit</button>                       
             </div>
                     
         </div>
