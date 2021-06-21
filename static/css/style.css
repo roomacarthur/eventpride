@@ -79,27 +79,6 @@ nav .brand-logo {
 }
 
 
-/* 3 next rules to be removed once nav, parallax hero imgs & footer fixed */
-
-#nav {
-    height: 60px;
-    width: 100%;
-    background-color: cornflowerblue;
-}
-
-#heroimg {
-    height: 25em;
-    width: 100%;
-    background-color: darkorchid;
-}
-
-#footer {
-    height: 10vh;
-    width: 100%;
-    background-color: hotpink;
-    bottom: 0;
-}
-
 .social {
     display: flex;
     justify-content: center;
