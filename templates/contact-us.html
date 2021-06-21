@@ -50,12 +50,20 @@
           </div>
 
           <div class="input-field">
-            <button
-              class="btn-large pink lighten-2 waves-effect waves-dark"
-              style="width: 100%"
-            >
+            <button data-target="modal1" class="btn-large pink lighten-2 waves-effect waves-dark modal-trigger">
               Submit
             </button>
+          </div>
+            <!-- Modal Structure -->
+            <div id="modal1" class="modal modal-fixed-footer">
+              <div class="modal-content">                
+                <p>You're message was sent successfully!</p><br>
+                <p>We will get in touch as soon as possible.</p><br>               
+              </div>
+              <div class="modal-footer">
+                <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+              </div>
+            </div>
           </div>
         </div>
       </div>

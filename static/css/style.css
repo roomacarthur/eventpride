@@ -109,6 +109,14 @@ nav .brand-logo {
     bottom: 0;
 }
 
+/* ____event pages_____ */
+
+.contact-text {
+    text-align: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
+
+}
 .social {
     display: flex;
     justify-content: center;
@@ -207,7 +215,7 @@ nav .brand-logo {
 }
 
 footer {
-    position: fixed;
+    position: relative;
     bottom: 0;
 }
 

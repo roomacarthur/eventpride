@@ -25,6 +25,10 @@ $('button').on('click', function() {
         $('#information-content').slideToggle().siblings('div').slideUp();
     }
 });
+//Message successful Modal
+$(document).ready(function(){
+    $('.modal').modal();    
+});
 
 // The modals for the flags on wikipride.html
 
