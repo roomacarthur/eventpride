@@ -53,23 +53,10 @@ def wikipride():
     return render_template('wikipride.html', title='WikiPride')
 
 
-# login section
-@app.route("/login", methods=['GET', 'POST'])
-def login():
-    """Render login template"""
-    return render_template('login.html', title='Login')
-
-
-# @app.route('/logout')
-# def logout():
-#     """Clears session and redirects to home"""
-#     session.clear()
-#     return redirect(url_for('index'))
-
-@app.route('/signup', methods=['GET', 'POST'])
-def signup():
-    """Handles registration functionality"""
-    return render_template('signup.html', title='SignUp')
+@app.route('/contact-us', methods=['GET', 'POST'])
+def contact_us():
+    """contact us page"""
+    return render_template('contact-us.html', title='Contact Us')
 
 
 if __name__ == "__main__":

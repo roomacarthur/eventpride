@@ -198,7 +198,7 @@ nav .brand-logo {
 }
 
 footer {
-    position: relative;
+    position: fixed;
 }
 
 footer .copyright {
