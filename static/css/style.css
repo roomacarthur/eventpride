@@ -33,6 +33,7 @@ nav .brand-logo {
     text-align: center;
     border-radius: 20px;
     overflow: hidden;
+    height: 500px;
     box-shadow: 2px 1px 18px -2px rgba(133, 111, 111, 0.71);
     -webkit-box-shadow: 2px 1px 18px -2px rgba(133, 111, 111, 0.71);
     -moz-box-shadow: 2px 1px 18px -2px rgba(133, 111, 111, 0.71);
@@ -94,6 +95,7 @@ nav .brand-logo {
 #dog-pride {
     object-position: 0% 30%;
 }
+
 .next-event{
     margin: 0 auto;
     width: 40%;
@@ -111,7 +113,8 @@ nav .brand-logo {
 }
 
 
-/* ____event pages_____ */
+/* ____contact us_____ */
+/* ____contact Us page_____ */
 
 .contact-text {
     text-align: center;
@@ -119,12 +122,23 @@ nav .brand-logo {
     padding-bottom: 1%;
 
 }
+
+/* ____FOOTER_____ */
+
+#footer {
+    height: 10vh;
+    width: 100%;
+    bottom: 0;
+}
+
+footer .copyright {
+    margin-bottom: 0;
+}
 .social {
     display: flex;
     justify-content: center;
     padding-top: 10px;
 }
-
 .social a {
     font-size: 1.5em;
     padding: 0 50px;
@@ -226,14 +240,14 @@ footer {
     width: 100%;
 }
 
-footer .copyright {
-    margin-bottom: 0;
-  }
 /*_____Media Queries_____*/
 
 /*For screens smaller than 1200px*/
-@media screen and(max-width: 1200px){
-
+@media screen and (max-width: 1200px){
+    .next-event{
+        width: 80%;
+    }
+    
 }
 
 /*For screens smaller than 992px wide.*/
@@ -242,6 +256,12 @@ footer .copyright {
         margin-left: 0;
         font-size: 3rem;
     }
+    #wedding {
+        object-position: 50% 80%;
+    }
+    
+    #dog-pride {
+        object-position: 75% 30%;
 }
 
 /*For screens smaller than 768px wide.*/
@@ -250,6 +270,7 @@ footer .copyright {
 }
 /*For screens smaller than 400px wide. (smaller mobile devices.)*/
 @media screen and (max-width: 400px) {
+  
     /*hero image*/
     .static-hero{
         height: 20vh;
@@ -263,5 +284,11 @@ footer .copyright {
         height: 500vh;
     }
 
+    .next-event{
+        width: 100%;
+    }
+    .social a {
+        font-size: 1.5em;
+        padding: 0 20px;
+      }
 }
-
