@@ -10,10 +10,10 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .static-hero {
-    height: 50vh;
-    width: 80%;
-    display: block;
-    margin: 5% auto;
+    width: 100%;
+    height: 500px;
+    object-fit:contain;
+    margin: .5rem;
 }
 
 /* ____events.html_____ */
