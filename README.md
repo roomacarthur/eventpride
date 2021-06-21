@@ -4,6 +4,11 @@
 
 ## June 2021 Hackathon
 
+## Bugs & Fixes
+
+1. Favicon is not animated within Chrome Browser
+   - Fix yet to be implemented
+
 ## Team
 
 - [Laura](https://github.com/hartnetl)
