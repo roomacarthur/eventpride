@@ -257,13 +257,10 @@ footer .copyright {
 
     /* flags in wikiPride */
     #flag-container {
-        width: 100%;
-        display: grid;
         grid-template-columns: 80vw;
-        grid-template-rows: 15vh 15vh 15vh 15vh 15vh 15vh 15vh 15vh 15vh 15vh 15vh 15vh ;
-        gap: 15%;
-        justify-content: center;
-        align-content: center;
+        grid-template-rows: 15vh 15vh 15vh 15vh 15vh 15vh 15vh 15vh 15vh 15vh 15vh ;
+        gap: 5%;
+        height: 500vh;
     }
 
 }
