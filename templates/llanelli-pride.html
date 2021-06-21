@@ -3,42 +3,39 @@
   <div class="buttons">
     <a
       class="waves-effect waves-light btn-small left"
-      href="{{ url_for('bournemouth_pride') }}"
+      href="{{ url_for('rotherham_pride') }}"
       >Previous</a
     >
     <a
       class="waves-effect waves-light btn-small right"
-      href="{{ url_for('rotherham_pride') }}"
+      href="{{ url_for('bristol_pride') }}"
       >Next</a
     >
   </div>
   <br />
-  <h2 class="center">Bristol Pride 2021</h2>
+  <h2 class="center">Llanelli Pride 2021</h2>
   <img
     class="event-img"
-    src="../static/images/events/bristol-pride.jpeg"
-    alt="Members at a pride event holding a rainbow love sign."
+    src="../static/images/drag-queens.jpg"
+    alt="drag queens"
   />
-  <h3>Location: Lloyds Amphitheatre</h3>
-  <h5>10th July</h5>
+  <h3>Location: Selwyn Samuel Center</h3>
+  <h5>16th - 18th July</h5>
   <h5>Time: TBA</h5>
+  <p>3 Days of Pride? Now that’s a Party!</p>
   <p>
-    The Bristol Pride is one of the largest Pride events in the UK. Thousands of
-    people travel from around the UK and the world to join in the fun.
+    Pride Events UK has just found out that the Llanelli Pride 2021 is going to
+    be held over 3-days and we cannot wait! The Event will take place from the
+    12th to the 18th of July 2021 at the Selwyn Samuel Centre.
   </p>
   <p>
-    The Bristol Pride will take place from Castle Park and in end in Lloyds
-    Amphitheatre. Celebrations continue on the 10 of July 2021
-  </p>
-  <p>
-    Pride Events UK simply adores the Bristol Pride and so do around thousands
-    of other people. The 2019 Bristol Pride sore around 40 thousand attendees.
-    This makes it one of the largest pride’s in the UK and Top 50 Pride events
-    in the world.
+    Stay tuned to Pride Events for all the best UK pride info. We have the
+    latest updates on all your favourite prides and more PLUS a newsletter you
+    can subscribe to so that you never skip a beat.
   </p>
   <p>
     <a
-      href="https://www.pride-events.co.uk/event/bristol-pride/"
+      href="https://www.pride-events.co.uk/event/llanelli-pride/"
       target="_blank"
       >More Information on This Event</a
     >
@@ -48,10 +45,10 @@
 </div>
 <script>
   var myMap = L.map("mapid").setView(
-    [51.44858434838721, -2.59969367441827],
+    [51.681048027372526, -4.169292457316284],
     13
   );
-  var marker = L.marker([51.44858434838721, -2.59969367441827]).addTo(myMap);
+  var marker = L.marker([51.681048027372526, -4.169292457316284]).addTo(myMap);
   L.tileLayer(
     "https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}",
     {

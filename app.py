@@ -44,6 +44,22 @@ def lavender_walk():
     Single events page, directed here after clicking card on events.html.
     """
     return render_template('lavender-walk.html', title="Lavender Walk, Dublin 2021 ")
+
+
+@app.route("/rotherham-pride")
+def rotherham_pride():
+    """
+    Single events page, directed here after clicking card on events.html.
+    """
+    return render_template('rotherham.html', title="Rotherham Pride 2021")
+
+
+@app.route("/llanelli-pride")
+def llanelli_pride():
+    """
+    Single events page, directed here after clicking card on events.html.
+    """
+    return render_template('llanelli-pride.html', title="LlanelliPride 2021")
 # wikipride
 
 

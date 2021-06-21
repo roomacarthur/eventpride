@@ -1,5 +1,18 @@
 {% extends "base.html" %} {% block content %}
 <div class="container">
+  <div class="buttons">
+    <a
+      class="waves-effect waves-light btn-small left"
+      href="{{ url_for('lavender_walk') }}"
+      >Previous</a
+    >
+    <a
+      class="waves-effect waves-light btn-small right"
+      href="{{ url_for('bristol_pride') }}"
+      >Next</a
+    >
+  </div>
+  <br />
   <h2 class="center">The Bournemouth Pride</h2>
   <img
     class="event-img"
@@ -33,6 +46,13 @@
     Pride(Bourne Free Pride) has found itself moving to Meyrick Park! In case
     you are wondering, the answer is YES, this will be the BIGGEST Pride
     Festival Venue that The Bournemouth Pride has ever had.
+  </p>
+  <p>
+    <a
+      href="https://www.pride-events.co.uk/event/bournemouth-pride/"
+      target="_blank"
+      >More Information on This Event</a
+    >
   </p>
   <!--Map-->
   <div id="mapid"></div>
