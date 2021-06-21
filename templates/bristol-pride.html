@@ -1,0 +1,49 @@
+{% extends "base.html" %} {% block content %}
+<div class="container">
+  <h2 class="center">Bristol Pride 2021</h2>
+  <img
+    class="event-img"
+    src="../static/images/events/bristol-pride.jpeg"
+    alt="Members at a pride event holding a rainbow love sign."
+  />
+  <h3>Location: Lloyds Amphitheatre</h3>
+  <h5>10th July</h5>
+  <h5>Time: TBA</h5>
+  <p>
+    The Bristol Pride is one of the largest Pride events in the UK. Thousands of
+    people travel from around the UK and the world to join in the fun.
+  </p>
+  <p>
+    The Bristol Pride will take place from Castle Park and in end in Lloyds
+    Amphitheatre. Celebrations continue on the 10 of July 2021
+  </p>
+  <p>
+    Pride Events UK simply adores the Bristol Pride and so do around thousands
+    of other people. The 2019 Bristol Pride sore around 40 thousand attendees.
+    This makes it one of the largest pride’s in the UK and Top 50 Pride events
+    in the world.
+  </p>
+  <!--Map-->
+  <div id="mapid"></div>
+</div>
+<script>
+  var myMap = L.map("mapid").setView(
+    [51.44858434838721, -2.59969367441827],
+    13
+  );
+  var marker = L.marker([51.44858434838721, -2.59969367441827]).addTo(myMap);
+  L.tileLayer(
+    "https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}",
+    {
+      attribution:
+        'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+      maxZoom: 18,
+      id: "mapbox/streets-v11",
+      tileSize: 512,
+      zoomOffset: -1,
+      accessToken:
+        "pk.eyJ1Ijoicm9vbWFjYXJ0aHVyIiwiYSI6ImNrcTVuZWY1MTE0d2Yydm8wb3JoeXJmYWsifQ.o1gu8ucOwq9lfys2xG7eTA",
+    }
+  ).addTo(myMap);
+</script>
+{%endblock%}

@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Poppins&display=swap');
+/* ____GENERAL_____ */
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-family:'Josefin Sans', sans-serif;;
+}
+
+/* ____events.html_____ */
+nav {
+    height: 10vh;
+    line-height: 10vh;
+}
+
+nav .brand-logo {
+    margin-left: 1.5rem;
+    font-family: 'Josefin Sans', sans-serif;
+    letter-spacing: 1px;
+    font-size: 4rem;
+}
+
+.card {
+    text-align: center;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 2px 1px 18px -2px rgba(133, 111, 111, 0.71);
+    -webkit-box-shadow: 2px 1px 18px -2px rgba(133, 111, 111, 0.71);
+    -moz-box-shadow: 2px 1px 18px -2px rgba(133, 111, 111, 0.71);
+}
+
+.card:hover {
+    animation-name: div-zoom;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    box-shadow: 2px 1px 50px 19px rgba(133, 111, 111, 0.8);
+    -webkit-box-shadow: 2px 1px 50px 19px rgba(133, 111, 111, 0.8);
+    -moz-box-shadow: 2px 1px 50px 19px rgba(133, 111, 111, 0.8);
+}
+
+@keyframes div-zoom {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.05);
+    }
+}
+
+.card-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* ____event pages_____ */
+
+.event-img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+#mapid {
+    height: 400px;
+    margin-bottom: 1.5rem;
+}
+/* ____WIKIPRIDE.HTML_____ */
+
+
+/* Hide content */
+
+#history-content,
+#importance-content,
+#information-content {
+    display: none;
+}
+
+
+/* 3 next rules to be removed once nav, parallax hero imgs & footer fixed */
+
+#nav {
+    height: 60px;
+    width: 100%;
+    background-color: cornflowerblue;
+}
+
+#heroimg {
+    height: 25em;
+    width: 100%;
+    background-color: darkorchid;
+}
+
+#footer {
+    height: 10vh;
+    width: 100%;
+    background-color: hotpink;
+    bottom: 0;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+.social a {
+    font-size: 1.5em;
+    padding: 0 50px;
+}
+
+/* The flag cards */
+
+.flag-button {
+    border: none;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    box-shadow: 2px 1px 18px -2px rgba(133, 111, 111, 0.71);
+    -webkit-box-shadow: 2px 1px 18px -2px rgba(133, 111, 111, 0.71);
+    -moz-box-shadow: 2px 1px 18px -2px rgba(133, 111, 111, 0.71);
+}
+
+.flag-button:hover {
+    animation-name: div-zoom;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    box-shadow: 2px 1px 50px 19px rgba(133, 111, 111, 0.8);
+    -webkit-box-shadow: 2px 1px 50px 19px rgba(133, 111, 111, 0.8);
+    -moz-box-shadow: 2px 1px 50px 19px rgba(133, 111, 111, 0.8);
+}
+
+#flag-container {
+    /* height: 120vh; */
+    width: 100%;
+    display: grid;
+    grid-template-columns: 15vw 15vw 15vw;
+    grid-template-rows: 25vh 25vh 25vh 25vh;
+    gap: 3%;
+    justify-content: center;
+    align-content: center;
+}
+
+.flags {
+    width: 100%;
+    height: 100%;
+    justify-items: center;
+}
+
+.flags img {
+    width: 70%;
+    height: 60%;
+    margin: 5% auto;
+    padding-top: 5%;
+    display: block;
+}
+
+.flags h5 {
+    text-align: center;
+}
+
+/* The modals for the flags */
+
+/* The Modal background */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 10vh;
+    width: 20vw;
+    height: 40vh;
+    overflow: hidden;
+}
+
+/* Modal Content Box */
+.modal-content {
+    height: 100%;
+    width: 100%;
+    margin: 5% auto;
+}
+
+/* The Close Button */
+.close {
+    color: rgb(133, 8, 206);
+    float: right;
+    font-size: 35px;
+    font-weight: bolder;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+footer {
+    position: fixed;
+}
+
+footer .copyright {
+    margin-bottom: 0;
+  }
+/*_____Media Queries_____*/
+
+/*For screens smaller than 1200px*/
+@media screen and(max-width: 1200px){
+
+}
+
+/*For screens smaller than 992px wide.*/
+@media screen and (max-width: 992px){
+    nav .brand-logo {
+        margin-left: 0;
+        font-size: 3rem;
+    }
+}
+
+/*For screens smaller than 768px wide.*/
+@media screen and (max-width: 768px){
+
+}
+/*For screens smaller than 400px wide. (smaller mobile devices.)*/
+@media screen and (max-width: 400px) {
+
+}
+

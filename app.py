@@ -19,31 +19,45 @@ def get_events():
     """Render events template"""
     return render_template('events.html', title='Events')
 
+# Single events pages.
 
+
+@app.route("/bournemouth-pride")
+def bournemouth_pride():
+    """
+    Single events page, directed here after clicking card on events.html.
+    """
+    return render_template('bournemouth-pride.html', title="Bournemouth pride 2021")
+
+
+@app.route("/bristol-pride")
+def bristol_pride():
+    """
+    Single events page, directed here after clicking card on events.html.
+    """
+    return render_template('bristol-pride.html', title="Bristol pride 2021")
+
+
+@app.route("/lavender-walk")
+def lavender_walk():
+    """
+    Single events page, directed here after clicking card on events.html.
+    """
+    return render_template('lavender-walk.html', title="Lavender Walk, Dublin 2021 ")
 # wikipride
+
+
 @app.route("/wikipride")
 def wikipride():
     """Render wikipride template"""
     return render_template('wikipride.html', title='WikiPride')
 
 
-# login section
-@app.route("/login", methods=['GET', 'POST'])
-def login():
-    """Render login template"""
-    return render_template('login.html', title='Login')
+@app.route('/contact-us', methods=['GET', 'POST'])
+def contact_us():
+    """contact us page"""
+    return render_template('contact-us.html', title='Contact Us')
 
-
-# @app.route('/logout')
-# def logout():
-#     """Clears session and redirects to home"""
-#     session.clear()
-#     return redirect(url_for('index'))
-
-@app.route('/signup', methods=['GET', 'POST'])
-def signup():
-    """Handles registration functionality"""
-    return render_template('signup.html', title='SignUp')
 
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP", "0.0.0.0"),
