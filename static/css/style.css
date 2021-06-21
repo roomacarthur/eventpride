@@ -273,6 +273,20 @@ footer {
 }
 /*For screens smaller than 400px wide. (smaller mobile devices.)*/
 @media screen and (max-width: 400px) {
+  
+    /*hero image*/
+    .static-hero{
+        height: 20vh;
+    }
+
+    /* flags in wikiPride */
+    #flag-container {
+        grid-template-columns: 80vw;
+        grid-template-rows: 15vh 15vh 15vh 15vh 15vh 15vh 15vh 15vh 15vh 15vh 15vh ;
+        gap: 5%;
+        height: 500vh;
+    }
+
     .next-event{
         width: 100%;
     }
