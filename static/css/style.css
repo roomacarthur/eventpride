@@ -272,6 +272,9 @@ footer {
         gap: 5%;
         height: 500vh;
     }
+    .flag-button {
+        margin-top: 3rem;
+    }
 }
 
 /*For screens smaller than 768px wide.*/
