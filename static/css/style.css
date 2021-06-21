@@ -95,6 +95,7 @@ nav .brand-logo {
 #dog-pride {
     object-position: 0% 30%;
 }
+
 .next-event{
     margin: 0 auto;
     width: 40%;
@@ -255,6 +256,12 @@ footer {
         margin-left: 0;
         font-size: 3rem;
     }
+    #wedding {
+        object-position: 50% 80%;
+    }
+    
+    #dog-pride {
+        object-position: 75% 30%;
 }
 
 /*For screens smaller than 768px wide.*/
@@ -272,4 +279,3 @@ footer {
       }
 
 }
-
