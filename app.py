@@ -59,7 +59,7 @@ def llanelli_pride():
     """
     Single events page, directed here after clicking card on events.html.
     """
-    return render_template('llanelli-pride.html', title="LlanelliPride 2021")
+    return render_template('llanelli-pride.html', title="Llanelli Pride 2021")
 # wikipride
 
 

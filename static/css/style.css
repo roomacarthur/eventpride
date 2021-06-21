@@ -177,6 +177,7 @@ footer .copyright {
     gap: 3%;
     justify-content: center;
     align-content: center;
+    margin-bottom: 5rem;
 }
 
 .flags {
@@ -265,6 +266,12 @@ footer {
     #dog-pride {
         object-position: 75% 30%;
     }
+    #flag-container {
+        grid-template-columns: 80vw;
+        grid-template-rows: 15vh 15vh 15vh 15vh 15vh 15vh 15vh 15vh 15vh 15vh 15vh;
+        gap: 5%;
+        height: 500vh;
+    }
 }
 
 /*For screens smaller than 768px wide.*/
@@ -284,12 +291,6 @@ footer {
     }
 
     /* flags in wikiPride */
-    #flag-container {
-        grid-template-columns: 80vw;
-        grid-template-rows: 15vh 15vh 15vh 15vh 15vh 15vh 15vh 15vh 15vh 15vh 15vh;
-        gap: 5%;
-        height: 500vh;
-    }
 
     .row .col.s12 {
         margin-top: 5%;
