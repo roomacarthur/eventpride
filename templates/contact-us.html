@@ -1,5 +1,6 @@
 {% extends "base.html" %} {% block content %}
 <div class="container">
+  <h2 class="center">CONTACT US</h2>
   <section>
     <div class="contact-text center">
       <p>
@@ -62,7 +63,6 @@
   </div>
   <div id="mapid"></div>
 </div>
-</div>
 <script>
   var myMap = L.map("mapid").setView(
     [53.35616181731429, -6.329538621379867],
@@ -83,5 +83,4 @@
     }
   ).addTo(myMap);
 </script>
-  {% endblock %}
-
+{% endblock %}
