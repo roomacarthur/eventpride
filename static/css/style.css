@@ -237,11 +237,12 @@ footer .copyright {
         font-size: 3rem;
     }
     #wedding {
-        object-position: 50% 80%;
+        object-position: 60% 80%;
     }
     
     #dog-pride {
-        object-position: 75% 30%;
+        object-position: 70% 30%;
+    }
 }
 
 /*For screens smaller than 768px wide.*/
@@ -250,5 +251,5 @@ footer .copyright {
 }
 /*For screens smaller than 400px wide. (smaller mobile devices.)*/
 @media screen and (max-width: 400px) {
-    
+
 }
