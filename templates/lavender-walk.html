@@ -1,5 +1,18 @@
 {% extends "base.html" %} {% block content %}
 <div class="container">
+  <div class="buttons">
+    <a
+      class="waves-effect waves-light btn-small left"
+      href="{{ url_for('get_events') }}"
+      >Previous</a
+    >
+    <a
+      class="waves-effect waves-light btn-small right"
+      href="{{ url_for('bournemouth_pride') }}"
+      >Next</a
+    >
+  </div>
+  <br />
   <h2 class="center">Lavender Walk - LGBT History Tour of Dublin</h2>
   <img
     class="event-img"
