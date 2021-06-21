@@ -20,22 +20,22 @@
 
   <div class="row">
     <div class="col s12 l4 offset-l4">
-      <form class="card">
+      <form id="contactform" class="card">
         <div class="card-action pink lighten-2 white-text">
           <h4>Contact Us</h4>
         </div>
         <div class="card-content">
           <div class="input-field">
-            <input id="first_name" type="text" class="validate" />
+            <input id="first_name" type="text" class="validate" required="" aria-required="true" />
             <label for="first_name">First Name</label>
           </div>
           <div class="input-field">
-            <input id="last_name" type="text" class="validate" />
+            <input id="last_name" type="text" class="validate" required="" aria-required="true" />
             <label for="last_name">Last Name</label>
           </div>
 
           <div class="input-field">
-            <input id="email" type="email" class="validate" />
+            <input id="email" type="email" class="validate" required="" aria-required="true" />
             <label for="email">Email</label>
           </div>
 
@@ -45,25 +45,17 @@
               id="msg_send"
               name="msg_send"
               class="materialize-textarea"
+              required="" aria-required="true"
             ></textarea>
             <label for="password">Message</label>
           </div>
 
           <div class="input-field">
-            <button data-target="modal1" class="btn-large pink lighten-2 waves-effect waves-dark modal-trigger">
+            <button class="btn-large pink lighten-2 waves-effect waves-dark">
               Submit
             </button>
           </div>
-            <!-- Modal Structure -->
-            <div id="modal1" class="modal modal-fixed-footer">
-              <div class="modal-content">                
-                <p>You're message was sent successfully!</p><br>
-                <p>We will get in touch with you as soon as possible.</p><br>               
-              </div>
-              <div class="modal-footer">
-                <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
-              </div>
-            </div>
+            
           </div>
         </div>
       </form>

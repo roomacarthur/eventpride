@@ -26,8 +26,8 @@ $('button').on('click', function() {
     }
 });
 //Message successful Modal
-$(document).ready(function(){
-    $('.modal').modal();    
+$(document).ready(function (e) {
+    e.preventDefault();
 });
 
 // The modals for the flags on wikipride.html
