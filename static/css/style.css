@@ -67,6 +67,10 @@ nav .brand-logo {
     height: 400px;
     margin-bottom: 1.5rem;
 }
+.bold {
+    font-weight:600;
+    font-size: 110%;
+}
 /* ____INDEX.HTML_____ */
 
 .carousel a img {
