@@ -79,6 +79,9 @@ nav .brand-logo {
     font-weight:600;
     font-size: 110%;
 }
+.btn-small {
+    margin: .5rem;
+}
 /* ____INDEX.HTML_____ */
 
 .carousel a img {
@@ -277,5 +280,4 @@ footer {
         font-size: 1.5em;
         padding: 0 20px;
       }
-
 }
