@@ -95,6 +95,7 @@ nav .brand-logo {
 #dog-pride {
     object-position: 0% 30%;
 }
+
 .next-event{
     margin: 0 auto;
     width: 40%;
@@ -255,6 +256,12 @@ footer {
         margin-left: 0;
         font-size: 3rem;
     }
+    #wedding {
+        object-position: 50% 80%;
+    }
+    
+    #dog-pride {
+        object-position: 75% 30%;
 }
 
 /*For screens smaller than 768px wide.*/
@@ -263,16 +270,11 @@ footer {
 }
 /*For screens smaller than 400px wide. (smaller mobile devices.)*/
 @media screen and (max-width: 400px) {
-<<<<<<< HEAD
     .next-event{
         width: 100%;
     }
-=======
     .social a {
         font-size: 1.5em;
         padding: 0 20px;
-      }
-
->>>>>>> 1b179d621923ee759f3a8b45bee0f1d34f1fdec1
+      }    
 }
-
