@@ -67,6 +67,15 @@ nav .brand-logo {
     height: 400px;
     margin-bottom: 1.5rem;
 }
+/* ____INDEX.HTML_____ */
+
+.carousel a img {
+    object-fit: cover;
+    object-position: 50% 50%;
+    width: 100%;
+    height: 50vh;
+
+}
 /* ____WIKIPRIDE.HTML_____ */
 
 
