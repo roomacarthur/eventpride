@@ -9,6 +9,13 @@ h1,h2,h3,h4,h5,h6 {
     font-family:'Josefin Sans', sans-serif;;
 }
 
+.static-hero {
+    height: 50vh;
+    width: 80%;
+    display: block;
+    margin: 5% auto;
+}
+
 /* ____events.html_____ */
 nav {
     height: 10vh;
