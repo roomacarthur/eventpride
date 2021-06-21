@@ -5,6 +5,16 @@ $(document).ready(function() {
     });
 });
 
+// Carousel of hero images
+$(document).ready(function(){
+    $('.carousel').carousel({
+        fullWidth: true
+    });
+    setInterval(function() {
+        $('.carousel').carousel('next');
+      }, 3000);
+});
+
 // Show/hide content on wikipride.html by clicking on buttons
 $('button').on('click', function() {
     if ($(this).is('#history')) {

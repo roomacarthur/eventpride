@@ -1,56 +1,95 @@
-{% extends "base.html" %}
-
-{% block content %}
-<section>
-  <div class="contact-text">
-      <p><strong>Email:</strong><a href="mailto:info@eventpride.com" target="_blank">
-              info@eventpride.com</a></p>
-      <p><strong>Phone:</strong> 1800 555 23 23</p>      
-      <p>The best way to contact us is by email or simply use the enquiry form below.</p>
+{% extends "base.html" %} {% block content %}
+<div class="container">
+  <section>
+    <div class="contact-text center">
+      <p>
+        <strong>Email:</strong
+        ><a href="mailto:info@eventpride.com" target="_blank">
+          info@eventpride.com</a
+        >
+      </p>
+      <p><strong>Phone:</strong> 1800 555 23 23</p>
+      <p>
+        The best way to contact us is by email or simply use the enquiry form
+        below.
+      </p>
       <p>We are located at Pheonix Park Dublin 8, Ireland, Dublin</p>
-      <p><a href="https://www.google.com/maps/place/53%C2%B021'21.2%22N+6%C2%B019'47.3%22W/@53.355882,-6.3320017,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d53.355882!4d-6.329813" target="_blank">
-        Click here</a> for directions on google maps</p>
-  </div>
-</section>
-       
-    <div class="row">
-        <div class="col s12 l4 offset-l4">
-          <div id="contact-form" class="card">
-            <div class="card-action pink lighten-2 white-text">
-                <h4>Contact Us</h4>
-            </div>
-         <div class="card-content">
-            <div class="input-field">
-              <input id="first_name" type="text" class="validate">
-              <label for="first_name">First Name</label>
-            </div>          
-            <div class="input-field">
-              <input id="last_name" type="text" class="validate">
-              <label for="last_name">Last Name</label>
-            </div>      
-         
-            <div class="input-field">
-              <input id="email" type="email" class="validate">
-              <label for="email">Email</label>
-            </div>
+    </div>
+  </section>
 
-            <div class="input-field">
-              <textarea placeholder="Write your message:" id="msg_send" name="msg_send" class="materialize-textarea"></textarea>
-              <label for="password">Message</label>
-            </div> 
+  <div class="row">
+    <div class="col s12 l4 offset-l4">
+      <div class="card">
+        <div class="card-action pink lighten-2 white-text">
+          <h4>Contact Us</h4>
+        </div>
+        <div class="card-content">
+          <div class="input-field">
+            <input id="first_name" type="text" class="validate" />
+            <label for="first_name">First Name</label>
+          </div>
+          <div class="input-field">
+            <input id="last_name" type="text" class="validate" />
+            <label for="last_name">Last Name</label>
+          </div>
 
-            <div class="input-field">
-                <button data-target="modal1" class="waves-effect waves-light pink accent-2 btn modal-trigger modal-close">Submit</button>           
-            </div> 
+          <div class="input-field">
+            <input id="email" type="email" class="validate" />
+            <label for="email">Email</label>
+          </div>
+
+          <div class="input-field">
+            <textarea
+              placeholder="Write your message:"
+              id="msg_send"
+              name="msg_send"
+              class="materialize-textarea"
+            ></textarea>
+            <label for="password">Message</label>
+          </div>
+
+          <div class="input-field">
+            <button data-target="modal1" class="btn-large pink lighten-2 waves-effect waves-dark modal-trigger">
+              Submit
+            </button>
+          </div>
             <!-- Modal Structure -->
-            <div id="modal1" class="modal">
-              <div class="modal-content">
-                <p>Your Message was submitted Successful!</p>                
+            <div id="modal1" class="modal modal-fixed-footer">
+              <div class="modal-content">                
+                <p>You're message was sent successfully!</p><br>
+                <p>We will get in touch as soon as possible.</p><br>               
               </div>
-            </div>                    
+              <div class="modal-footer">
+                <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-            
-    
-{% endblock %}
+  </div>
+  <div id="mapid"></div>
+</div>
+</div>
+<script>
+  var myMap = L.map("mapid").setView(
+    [53.35616181731429, -6.329538621379867],
+    13
+  );
+  var marker = L.marker([53.35616181731429, -6.329538621379867]).addTo(myMap);
+  L.tileLayer(
+    "https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}",
+    {
+      attribution:
+        'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+      maxZoom: 18,
+      id: "mapbox/streets-v11",
+      tileSize: 512,
+      zoomOffset: -1,
+      accessToken:
+        "pk.eyJ1Ijoicm9vbWFjYXJ0aHVyIiwiYSI6ImNrcTVuZWY1MTE0d2Yydm8wb3JoeXJmYWsifQ.o1gu8ucOwq9lfys2xG7eTA",
+    }
+  ).addTo(myMap);
+</script>
+  {% endblock %}
+

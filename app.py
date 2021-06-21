@@ -53,7 +53,7 @@ def wikipride():
     return render_template('wikipride.html', title='WikiPride')
 
 
-@app.route('/contact-us', methods=['GET', 'POST'])
+@app.route('/contact-us')
 def contact_us():
     """contact us page"""
     return render_template('contact-us.html', title='Contact Us')
