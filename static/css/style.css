@@ -73,9 +73,21 @@ nav .brand-logo {
     object-fit: cover;
     object-position: 50% 50%;
     width: 100%;
-    height: 50vh;
-
+    height: 60vh;
 }
+
+#wedding {
+    object-position: 0% 80%;
+}
+
+#dog-pride {
+    object-position: 0% 30%;
+}
+.next-event{
+    margin: 0 auto;
+    width: 40%;
+}
+
 /* ____WIKIPRIDE.HTML_____ */
 
 
@@ -88,24 +100,11 @@ nav .brand-logo {
 }
 
 
-/* 3 next rules to be removed once nav, parallax hero imgs & footer fixed */
-
-#nav {
-    height: 60px;
-    width: 100%;
-    background-color: cornflowerblue;
-}
-
-#heroimg {
-    height: 25em;
-    width: 100%;
-    background-color: darkorchid;
-}
+/* ____FOOTER_____ */
 
 #footer {
     height: 10vh;
     width: 100%;
-    background-color: hotpink;
     bottom: 0;
 }
 
@@ -141,6 +140,7 @@ nav .brand-logo {
 }
 
 .flag-button:hover {
+    cursor: pointer;
     animation-name: div-zoom;
     animation-duration: 0.5s;
     animation-fill-mode: forwards;

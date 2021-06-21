@@ -10,16 +10,16 @@
         ><img src="static/images/drag-queens.jpg"
       /></a>
       <a class="carousel-item" href="#"
-        ><img src="static/images/wedding.jpg"
+        ><img id ="wedding" src="static/images/wedding.jpg"
       /></a>
       <a class="carousel-item" href="#"
         ><img src="static/images/love-is-love.jpg"
       /></a>
-      <a class="carousel-item" href="#"
+       <a class="carousel-item" href="#"
         ><img src="static/images/night-pride.jpg"
       /></a>
       <a class="carousel-item" href="#"
-        ><img src="static/images/dog-pride.jpg"
+        ><img id="dog-pride" src="static/images/dog-pride.jpg"
       /></a>
     </div>
   </div>
@@ -29,8 +29,20 @@
       <p></p>
     </div>
   </div>
-  <div class="next-events">
-    <!--Showcase the next 3 events-->
+  <div class="next-event">
+    <h4 class="center">Next Event:</h4>
+    <a class="col s6" href="{{ url_for('lavender_walk') }}" target="">
+      <div class="card">
+        <img
+          class="card-img"
+          src="./static/images/tonie.jpg"
+          alt="Lavender walk, dublin advertisement image"
+        />
+        <h3>Lavender Walk</h3>
+        <h4>Location: <span>Dublin</span></h4>
+        <h4>21 june - 25 June</h4>
+      </div>
+    </a>
   </div>
 </div>
 {% endblock %}
