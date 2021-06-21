@@ -37,6 +37,13 @@ def bristol_pride():
     """
     return render_template('bristol-pride.html', title="Bristol pride 2021")
 
+
+@app.route("/lavender-walk")
+def lavender_walk():
+    """
+    Single events page, directed here after clicking card on events.html.
+    """
+    return render_template('lavender-walk.html', title="Lavender Walk, Dublin 2021 ")
 # wikipride
 
 

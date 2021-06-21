@@ -1,0 +1,76 @@
+{% extends "base.html" %} {% block content %}
+<div class="container">
+  <h2 class="center">Lavender Walk - LGBT History Tour of Dublin</h2>
+  <img
+    class="event-img"
+    src="../static/images/events/dublin.jpeg"
+    alt="Busy street in Dublin."
+  />
+  <h3>Location: Dublin Castle, Dublin</h3>
+  <h5>9th - 10th July</h5>
+  <h5>Time: TBA</h5>
+  <p>
+    <strong>Tonie’s Lavender Walk: LGBT History Tour of Dublin</strong><br />
+  </p>
+  <p>
+    Long considered an indispensable part of Dublin Pride, the LGBTI history
+    walking tour of Dublin returns this June, hosted by its originator, Tonie
+    Walsh.<br />
+    Tours depart daily from Dublin Castle (pedestrian entrance) in groups
+    limited to a maximum of 15 and with a fully vaccinated host.<br />
+    Approx. two hour’s duration, there will be a pit stop at the National
+    Photographic Archive, where Living With Pride: Photographs by Christopher
+    Robson is currently showing.
+  </p>
+  <p><strong>Your Host, Tonie Walsh</strong><br /></p>
+  <p>
+    Archivist, activist, writer and historian, Tonie Walsh, has had a long
+    engagement with Ireland’s LGBT civil rights movement and social scene since
+    1979. He is the co-founder of GCN magazine, which he edited during its first
+    two years. In 1997, he re-organised the archive holding of the National LGBT
+    Federation into what would later become known as the Irish Queer Archive
+    (IQA). The archive was transferred to state ownership in 2008. He is
+    currently co-curating the Living With Pride programme at the National
+    Library of Ireland.
+  </p>
+  <p>
+    <strong>Praise for Lavender Walk</strong>
+  </p>
+  <p>
+    Of course, there are some interesting and exciting developments to mention.
+    As The Pride Grows, so does the venue and in 2021 The Bournemouth
+    Pride(Bourne Free Pride) has found itself moving to Meyrick Park! In case
+    you are wondering, the answer is YES, this will be the BIGGEST Pride
+    Festival Venue that The Bournemouth Pride has ever had.
+  </p>
+  <p>
+    <a
+      href="https://www.eventbrite.ie/e/tonies-lavender-walk-lgbt-history-tour-of-dublin-tickets-159321339415"
+      target="_blank"
+      >More Information on This Event</a
+    >
+  </p>
+  <!--Map-->
+  <div id="mapid"></div>
+</div>
+<script>
+  var myMap = L.map("mapid").setView(
+    [53.342978957910205, -6.267492774794406],
+    13
+  );
+  var marker = L.marker([53.342978957910205, -6.267492774794406]).addTo(myMap);
+  L.tileLayer(
+    "https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}",
+    {
+      attribution:
+        'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+      maxZoom: 18,
+      id: "mapbox/streets-v11",
+      tileSize: 512,
+      zoomOffset: -1,
+      accessToken:
+        "pk.eyJ1Ijoicm9vbWFjYXJ0aHVyIiwiYSI6ImNrcTVuZWY1MTE0d2Yydm8wb3JoeXJmYWsifQ.o1gu8ucOwq9lfys2xG7eTA",
+    }
+  ).addTo(myMap);
+</script>
+{%endblock%}

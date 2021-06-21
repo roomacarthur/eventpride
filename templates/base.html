@@ -54,9 +54,9 @@
   <body>
     <header>
       <!-- top navbar -->
-      <nav>
+      <nav class="purple darken-3">
         <div class="nav-wrapper">
-          <a href="{{ url_for('index') }}" class="brand-logo">EventPride</a>
+          <a href="{{ url_for('index') }}" class="brand-logo">eventpride</a>
           <a href="#" data-target="mobile-demo" class="sidenav-trigger right"
             ><i class="fas fa-bars"></i
           ></a>
@@ -92,7 +92,7 @@
     </div>
     <main>{% block content %} {% endblock %}</main>
 
-    <footer id="footer">
+    <footer id="footer" class="purple darken-3">
       <div class="social container">
         <a
           class="white-text"
@@ -117,7 +117,7 @@
         ></a>
         <a
           class="white-text"
-          href="https://www.github.com/"
+          href="https://github.com/roomacarthur/eventpride"
           target="_blank"
           rel="noopener"
           ><i class="fab fa-github"></i

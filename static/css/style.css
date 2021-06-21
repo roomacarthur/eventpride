@@ -1,14 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Poppins&display=swap');
 /* ____GENERAL_____ */
 
 body {
     margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-family:'Josefin Sans', sans-serif;;
 }
 
-
 /* ____events.html_____ */
+nav {
+    height: 10vh;
+    line-height: 10vh;
+}
 
 nav .brand-logo {
     margin-left: 1.5rem;
+    font-family: 'Josefin Sans', sans-serif;
+    letter-spacing: 1px;
+    font-size: 4rem;
 }
 
 .card {
@@ -193,3 +204,27 @@ footer {
 footer .copyright {
     margin-bottom: 0;
   }
+/*_____Media Queries_____*/
+
+/*For screens smaller than 1200px*/
+@media screen and(max-width: 1200px){
+
+}
+
+/*For screens smaller than 992px wide.*/
+@media screen and (max-width: 992px){
+    nav .brand-logo {
+        margin-left: 0;
+        font-size: 3rem;
+    }
+}
+
+/*For screens smaller than 768px wide.*/
+@media screen and (max-width: 768px){
+
+}
+/*For screens smaller than 400px wide. (smaller mobile devices.)*/
+@media screen and (max-width: 400px) {
+
+}
+
