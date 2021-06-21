@@ -15,7 +15,7 @@
        
     <div class="row">
         <div class="col s12 l4 offset-l4">
-          <div class="card">
+          <div id="contact-form" class="card">
             <div class="card-action pink lighten-2 white-text">
                 <h4>Contact Us</h4>
             </div>
@@ -40,9 +40,14 @@
             </div> 
 
             <div class="input-field">
-                <button class="btn-large pink lighten-2 waves-effect waves-dark" style="width: 100%;">Submit</button>                       
-            </div>
-                    
+                <button data-target="modal1" class="waves-effect waves-light pink accent-2 btn modal-trigger modal-close">Submit</button>           
+            </div> 
+            <!-- Modal Structure -->
+            <div id="modal1" class="modal">
+              <div class="modal-content">
+                <p>Your Message was submitted Successful!</p>                
+              </div>
+            </div>                    
         </div>
       </div>
     </div>
