@@ -9,6 +9,13 @@ h1,h2,h3,h4,h5,h6 {
     font-family:'Josefin Sans', sans-serif;;
 }
 
+.static-hero {
+    height: 50vh;
+    width: 80%;
+    display: block;
+    margin: 5% auto;
+}
+
 /* ____events.html_____ */
 nav {
     height: 10vh;
@@ -106,6 +113,7 @@ nav .brand-logo {
 
 
 /* ____contact us_____ */
+/* ____contact Us page_____ */
 
 .contact-text {
     text-align: center;
@@ -113,12 +121,23 @@ nav .brand-logo {
     padding-bottom: 1%;
 
 }
+
+/* ____FOOTER_____ */
+
+#footer {
+    height: 10vh;
+    width: 100%;
+    bottom: 0;
+}
+
+footer .copyright {
+    margin-bottom: 0;
+}
 .social {
     display: flex;
     justify-content: center;
     padding-top: 10px;
 }
-
 .social a {
     font-size: 1.5em;
     padding: 0 50px;
@@ -220,9 +239,6 @@ footer {
     width: 100%;
 }
 
-footer .copyright {
-    margin-bottom: 0;
-  }
 /*_____Media Queries_____*/
 
 /*For screens smaller than 1200px*/
@@ -247,8 +263,16 @@ footer .copyright {
 }
 /*For screens smaller than 400px wide. (smaller mobile devices.)*/
 @media screen and (max-width: 400px) {
+<<<<<<< HEAD
     .next-event{
         width: 100%;
     }
+=======
+    .social a {
+        font-size: 1.5em;
+        padding: 0 20px;
+      }
+
+>>>>>>> 1b179d621923ee759f3a8b45bee0f1d34f1fdec1
 }
 
