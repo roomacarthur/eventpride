@@ -107,6 +107,22 @@ nav .brand-logo {
     width: 100%;
     bottom: 0;
 }
+footer {
+    position: relative;
+    bottom: 0;
+}
+footer .copyright {
+    margin-bottom: 0;
+}
+.social {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+}
+.social a {
+    font-size: 1.5em;
+    padding: 0 50px;
+}
 
 /* ____event pages_____ */
 
@@ -116,16 +132,7 @@ nav .brand-logo {
     padding-bottom: 1%;
 
 }
-.social {
-    display: flex;
-    justify-content: center;
-    padding-top: 10px;
-}
 
-.social a {
-    font-size: 1.5em;
-    padding: 0 50px;
-}
 
 /* The flag cards */
 
@@ -214,14 +221,7 @@ nav .brand-logo {
     cursor: pointer;
 }
 
-footer {
-    position: relative;
-    bottom: 0;
-}
 
-footer .copyright {
-    margin-bottom: 0;
-  }
 /*_____Media Queries_____*/
 
 /*For screens smaller than 1200px*/
@@ -243,6 +243,10 @@ footer .copyright {
 }
 /*For screens smaller than 400px wide. (smaller mobile devices.)*/
 @media screen and (max-width: 400px) {
+    .social a {
+        font-size: 1.5em;
+        padding: 0 20px;
+      }
 
 }
 
