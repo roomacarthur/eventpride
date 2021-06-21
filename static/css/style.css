@@ -104,14 +104,6 @@ nav .brand-logo {
 }
 
 
-/* ____FOOTER_____ */
-
-#footer {
-    height: 10vh;
-    width: 100%;
-    bottom: 0;
-}
-
 /* ____event pages_____ */
 
 .contact-text {
@@ -218,9 +210,13 @@ nav .brand-logo {
     cursor: pointer;
 }
 
+/* ____FOOTER_____ */
+
 footer {
     position: relative;
     bottom: 0;
+    height: 6em;
+    width: 100%;
 }
 
 footer .copyright {
