@@ -67,6 +67,10 @@ nav .brand-logo {
     height: 400px;
     margin-bottom: 1.5rem;
 }
+.bold {
+    font-weight:600;
+    font-size: 110%;
+}
 /* ____INDEX.HTML_____ */
 
 .carousel a img {
@@ -99,6 +103,14 @@ nav .brand-logo {
     display: none;
 }
 
+/* ____contact Us page_____ */
+
+.contact-text {
+    text-align: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
+
+}
 
 /* ____FOOTER_____ */
 
@@ -107,10 +119,7 @@ nav .brand-logo {
     width: 100%;
     bottom: 0;
 }
-footer {
-    position: relative;
-    bottom: 0;
-}
+
 footer .copyright {
     margin-bottom: 0;
 }
@@ -123,16 +132,6 @@ footer .copyright {
     font-size: 1.5em;
     padding: 0 50px;
 }
-
-/* ____event pages_____ */
-
-.contact-text {
-    text-align: center;
-    padding-top: 1%;
-    padding-bottom: 1%;
-
-}
-
 
 /* The flag cards */
 
@@ -221,6 +220,14 @@ footer .copyright {
     cursor: pointer;
 }
 
+/* ____FOOTER_____ */
+
+footer {
+    position: relative;
+    bottom: 0;
+    height: 6em;
+    width: 100%;
+}
 
 /*_____Media Queries_____*/
 
